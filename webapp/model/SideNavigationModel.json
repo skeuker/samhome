@@ -1,0 +1,16 @@
+{
+	"navigation": [{
+		"title": "Workplaces",
+		"icon": "sap-icon://sap-box",
+		"expanded": true,
+		"key": "Workplaces"
+	}, {
+		"title": "Registers",
+		"icon": "sap-icon://list",
+		"key": "Registers"
+	}, {
+		"title": "Reports",
+		"icon": "sap-icon://manager-insight",
+		"key": "Reports"
+	}]
+}

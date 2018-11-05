@@ -1,0 +1,37 @@
+/* Enter your custom styles here */
+
+.titleWorkplacesBlockedLayoutCell {
+    background-image: url("Workplaces.jpg");
+    background-position: 0 80%;
+    background-size: cover;
+    height: 175px;
+}
+
+.titleWorkplacesBlockedLayoutCell .sapUiBlockCellContent .sapUiBlockCellTitle {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.titleRegistersBlockedLayoutCell {
+    background-image: url("Registers.jpg");
+    background-position: 0 80%;
+    background-size: cover;
+    height: 175px;
+}
+
+.titleRegistersBlockedLayoutCell .sapUiBlockCellContent .sapUiBlockCellTitle {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.titleReportsBlockedLayoutCell {
+    background-image: url("Reports.jpg");
+    background-position: 0 80%;
+    background-size: cover;
+    height: 175px;
+}
+
+.titleReportsBlockedLayoutCell .sapUiBlockCellContent .sapUiBlockCellTitle {
+    font-size: 4rem;
+    color: #ffffff;
+}

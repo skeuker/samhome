@@ -1,0 +1,168 @@
+[{
+	"FeatureID": "SoftwareDeveloperWrkplace",
+	"FeatureTitle": "Developer Workplace",
+	"FeatureText": "Use this workplace to pick up work requests for implementation, to manage your assigned requests and to feedback worked time and progress made.",
+	"FeatureUrl": "http://smdev.pnp.co.za:8000/sap/bc/webdynpro/blw/sam_bybsp?selected_component=wpdevlpr",
+	"UILayoutRow": 1,
+	"UILayoutCell": 1,
+	"UILayoutIcon": "sap-icon://sap-box",
+	"UILayoutWidth": 50,
+	"FeatureType": "Workplace"
+}, {
+	"FeatureID": "FunctionalWrkplace",
+	"FeatureTitle": "Functional Workplace",
+	"FeatureText": "Use this workplace to view the development requests you are involved in. You initiate implementation by uploading functional specifications.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"UILayoutRow": 1,
+	"UILayoutCell": 2,
+	"UILayoutIcon": "sap-icon://sap-box",
+	"UILayoutWidth": 50,
+	"FeatureType": "Workplace"
+}, {
+	"FeatureID": "ProjmanWorkplace",
+	"FeatureTitle": "Project Manager Workplace",
+	"FeatureText": "Use this workplace to track development for the projects you manage. Use the information about progress of specification delivery, development and functional testing to take necessary action.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"UILayoutRow": 2,
+	"UILayoutCell": 3,
+	"UILayoutIcon": "sap-icon://sap-box",
+	"UILayoutWidth": 50,
+	"FeatureType": "Workplace"
+}, {
+	"FeatureID": "TesterWorkplace",
+	"FeatureTitle": "Tester Workplace",
+	"FeatureText": "Use this workplace to pick up items from your test plan and to feedback test results to developers and functional consultants.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"UILayoutRow": 2,
+	"UILayoutCell": 1,
+	"UILayoutIcon": "sap-icon://sap-box",
+	"UILayoutWidth": 50,
+	"FeatureType": "Workplace"
+}, {
+	"FeatureID": "SysadminWorkplace",
+	"FeatureTitle": "System Administrator Workplace",
+	"FeatureText": "Use this workplace to view changes that were approved for deployment. Check deployment results after import into the target system. List incomplete deployments to take corrective action.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"UILayoutRow": 3,
+	"UILayoutCell": 2,
+	"UILayoutIcon": "sap-icon://sap-box",
+	"UILayoutWidth": 50,
+	"FeatureType": "Workplace"
+}, {
+	"FeatureID": "TeamleadWorkplace",
+	"FeatureTitle": "Team Lead Workplace",
+	"FeatureText": "Use this workplace to manage members in your team. View your pipeline of requirements, schedule work, assign to team members and manage implementation progress.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"UILayoutRow": 3,
+	"UILayoutIcon": "sap-icon://sap-box",
+	"UILayoutWidth": 50,
+	"FeatureType": "Workplace"
+}, {
+	"FeatureID": "FunctionalOwnerWorkplace",
+	"FeatureTitle": "Functional Owner Workplace",
+	"FeatureText": "Use the functional owner workplace to approve or reject change requests that have been logged in your functional area. Monitor progress of implementation.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"UILayoutRow": 4,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://sap-box",
+	"FeatureType": "Workplace"
+}, {
+	"FeatureID": "ChangeRequestRegister",
+	"FeatureTitle": "Change requests",
+	"FeatureText": "Log change requests and view the development and testing status of your requests. This is the entry point for development work.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Register",
+	"UILayoutRow": 1,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://list"
+}, {
+	"FeatureID": "WorkRequestRegister",
+	"FeatureTitle": "Work requests",
+	"FeatureText": "Manage work requests assigned to developers, view their progress, open effort and status compared to schedule. Estimated completion dates are calculated based on team capacity.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Register",
+	"UILayoutRow": 1,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://list"
+}, {
+	"FeatureID": "DevelopmentRequestRegister",
+	"FeatureTitle": "Development requests",
+	"FeatureText": "Manage development requests, e.g. by creating new request versions and uploading new specifications. They are your software assets.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Register",
+	"UILayoutRow": 2,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://list"
+}, {
+	"FeatureID": "WorkloadReport",
+	"FeatureTitle": "Workload and Capacity",
+	"FeatureText": "View current workload of the SDLC teams and see whether there is available capacity for changes you intend to request.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Report",
+	"UILayoutRow": 1,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://manager-insight"
+}, {
+	"FeatureID": "TimekeepingReport",
+	"FeatureTitle": "Timekeeping",
+	"FeatureText": "View time spent by SDLC team members towards completion of requested changes or projects.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Report",
+	"UILayoutRow": 1,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://manager-insight"
+}, {
+	"FeatureID": "ActivitiesReport",
+	"FeatureTitle": "Activities",
+	"FeatureText": "View activities undertaken by SDLC team members towards completion of requested changes or projects.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Report",
+	"UILayoutRow": 2,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://manager-insight"
+}, {
+	"FeatureID": "QueryBuilderReport",
+	"FeatureTitle": "Query builder",
+	"FeatureText": "Compose queries using complex selection criteria to analyze information in your software development lifecycle.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Report",
+	"UILayoutRow": 2,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://manager-insight"
+}, {
+	"FeatureID": "DeploymentUnitRegister",
+	"FeatureTitle": "Deployment units",
+	"FeatureText": "Capture and list deployment units that were created during the implementation of work requests. View status and success of deployment to Quality assurance and Production.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Register",
+	"UILayoutRow": 2,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://list"
+}, {
+	"FeatureID": "CompositeRegister",
+	"FeatureTitle": "Composite developments",
+	"FeatureText": "View a list of composite solutions. Find out which development requests and technologies make up the composite solution and read supporting documentation.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Register",
+	"UILayoutRow": 3,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://list"
+}, {
+	"FeatureID": "TechnicalObjectsRegister",
+	"FeatureTitle": "Technical objects",
+	"FeatureText": "View a list of technical objects (programs etc.) that were created during the implementation of work requests. Display related developement requests and their functional specification.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Register",
+	"UILayoutRow": 3,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://list"
+}, {
+	"FeatureID": "DocumentRegister",
+	"FeatureTitle": "Documents",
+	"FeatureText": "View business requirement documents, functional and technical specifications, test scripts and other documents that were created during the software development lifecycle.",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Register",
+	"UILayoutRow": 4,
+	"UILayoutWidth": 50,
+	"UILayoutIcon": "sap-icon://list"
+}]

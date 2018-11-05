@@ -1,0 +1,154 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "pnp.sam_home",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"mainService": {
+				"uri": "/here/goes/your/serviceurl/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "pnp.sam.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "pnp.sam.i18n.i18n"
+				}
+			},
+			"SideNavigationModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/SideNavigationModel.json"
+			},
+			"SAMModel": {
+				"uri": "/here/goes/your/serviceurl/",
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "mainService",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"controlId": "mainContents",
+				"viewType": "XML",
+				"controlAggregation": "pages",
+				"viewPath": "pnp.sam.view",
+				"async": true
+			},
+			"routes": [{
+				"name": "Workplaces",
+				"pattern": "",
+				"greedy": false,
+				"target": [
+					"Workplaces"
+				]
+			}, {
+				"name": "Registers",
+				"pattern": "Registers",
+				"greedy": false,
+				"target": [
+					"Registers"
+				]
+			}, {
+				"name": "Reports",
+				"pattern": "Reports",
+				"greedy": false,
+				"target": [
+					"Reports"
+				]
+			}],
+			"targets": {
+				"Workplaces": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "Workplaces",
+					"title": "Workplaces",
+					"viewId": "Workplaces",
+					"viewPath": "pnp.sam.view"
+				},
+				"Registers": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "Registers",
+					"title": "Registers",
+					"viewId": "Registers",
+					"viewPath": "pnp.sam.view"
+				},
+				"Reports": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "Reports",
+					"title": "Reports",
+					"viewId": "Reports",
+					"viewPath": "pnp.sam.view"
+				}
+			}
+		}
+	}
+}

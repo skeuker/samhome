@@ -1,0 +1,65 @@
+<mvc:View controllerName="pnp.sam.controller.App" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	busy="{viewModel>/busy}">
+	<Page showHeader="false" showFooter="true">
+		<l:BlockLayout id="BlockLayout" background="Light">
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell class="titleWorkplacesBlockedLayoutCell" title="Workplaces" titleAlignment="Begin"></l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+			<l:BlockLayoutRow
+				content="{ path: 'SAMModel>/Features', filters: [ { path: 'FeatureType', operator: 'EQ', value1: 'Workplace' }, { path: 'UILayoutRow', operator: 'EQ', value1: 1 } ]}"
+				scrollable="true">
+				<l:BlockLayoutCell backgroundColorSet="ColorSet11" backgroundColorShade="ShadeA" width="{SAMModel>UILayoutWidth}">
+					<HBox>
+						<core:Icon src="{SAMModel>UILayoutIcon}" size="2rem" color="Default"/>
+						<Text text="{SAMModel>FeatureText}" class="sapUiSmallMarginBegin"/>
+					</HBox>
+					<l:titleLink>
+						<Link text="{SAMModel>FeatureTitle}" href="{SAMModel>FeatureUrl}" target="_blank"/>
+					</l:titleLink>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+			<l:BlockLayoutRow
+				content="{ path: 'SAMModel>/Features', filters: [ { path: 'FeatureType', operator: 'EQ', value1: 'Workplace' }, { path: 'UILayoutRow', operator: 'EQ', value1: 2 } ]}"
+				scrollable="true">
+				<l:BlockLayoutCell backgroundColorSet="ColorSet11" backgroundColorShade="ShadeA" width="{SAMModel>UILayoutWidth}">
+					<HBox>
+						<core:Icon src="{SAMModel>UILayoutIcon}" size="2rem" color="Default"/>
+						<Text text="{SAMModel>FeatureText}" class="sapUiSmallMarginBegin"/>
+					</HBox>
+					<l:titleLink>
+						<Link text="{SAMModel>FeatureTitle}" href="{SAMModel>FeatureUrl}" target="_blank"/>
+					</l:titleLink>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+			<l:BlockLayoutRow
+				content="{ path: 'SAMModel>/Features', filters: [ { path: 'FeatureType', operator: 'EQ', value1: 'Workplace' }, { path: 'UILayoutRow', operator: 'EQ', value1: 3 } ]}"
+				scrollable="true">
+				<l:BlockLayoutCell backgroundColorSet="ColorSet11" backgroundColorShade="ShadeA" width="{SAMModel>UILayoutWidth}">
+					<HBox>
+						<core:Icon src="{SAMModel>UILayoutIcon}" size="2rem" color="Default"/>
+						<Text text="{SAMModel>FeatureText}" class="sapUiSmallMarginBegin"/>
+					</HBox>
+					<l:titleLink>
+						<Link text="{SAMModel>FeatureTitle}" href="{SAMModel>FeatureUrl}" target="_blank"/>
+					</l:titleLink>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+			<l:BlockLayoutRow
+				content="{ path: 'SAMModel>/Features', filters: [ { path: 'FeatureType', operator: 'EQ', value1: 'Workplace' }, { path: 'UILayoutRow', operator: 'EQ', value1: 4 } ]}"
+				scrollable="true">
+				<l:BlockLayoutCell backgroundColorSet="ColorSet11" backgroundColorShade="ShadeA" width="{SAMModel>UILayoutWidth}">
+					<HBox>
+						<core:Icon src="{SAMModel>UILayoutIcon}" size="2rem" color="Default"/>
+						<Text text="{SAMModel>FeatureText}" class="sapUiSmallMarginBegin"/>
+					</HBox>
+					<l:titleLink>
+						<Link text="{SAMModel>FeatureTitle}" href="{SAMModel>FeatureUrl}" target="_blank"/>
+					</l:titleLink>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+		</l:BlockLayout>
+		<footer>
+			<Toolbar></Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

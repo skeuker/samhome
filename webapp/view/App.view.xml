@@ -1,0 +1,31 @@
+<mvc:View height="100%" controllerName="pnp.sam.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
+	busy="{viewModel>/busy}">
+	<tnt:ToolPage id="app" class="sapUiDemoToolPage" sideExpanded="false">
+		<tnt:header>
+			<tnt:ToolHeader>
+				<Button id="sideNavigationToggleButton" icon="sap-icon://menu2" type="Transparent" press="onSideNavButtonPress">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow"/>
+					</layoutData>
+				</Button>
+				<Image src="images/pnplogo_white.png" width="100px"/>
+				<ToolbarSpacer/>
+				<Title text="{i18n>appTitle}"/>
+				<ToolbarSpacer/>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:sideContent>
+			<tnt:SideNavigation expanded="false" itemSelect="onNavigationItemSelect">
+				<tnt:NavigationList items="{path: 'SideNavigationModel>/navigation', templateShareable: false}">
+					<tnt:NavigationListItem text="{SideNavigationModel>title}" icon="{SideNavigationModel>icon}" expanded="{SideNavigationModel>/expanded}"
+						items="{path: 'SideNavigationModel>items', templateShareable: false}" key="{SideNavigationModel>key}">
+						<tnt:NavigationListItem text="{SideNavigationModel>title}" key="{SideNavigationModel>key}" enabled="{SideNavigationModel>enabled}"></tnt:NavigationListItem>
+					</tnt:NavigationListItem>
+				</tnt:NavigationList>
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+		<tnt:mainContents>
+			<App id="mainContents"/>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+</mvc:View>

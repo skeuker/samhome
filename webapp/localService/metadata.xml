@@ -1,0 +1,22 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="SAM">
+			<EntityType Name="Feature">
+				<Key>
+					<PropertyRef Name="FeatureID"/>
+				</Key>
+				<Property Name="FeatureID" Type="Edm.String" Nullable="false" sap:label="Feature ID"></Property>
+				<Property Name="FeatureTitle" Type="Edm.String" Nullable="false"></Property>
+				<Property Name="FeatureText" Type="Edm.String" Nullable="false"></Property>
+				<Property Name="FeatureUrl" Type="Edm.String" Nullable="false"></Property>
+				<Property Name="FeatureType" Type="Edm.String" Nullable="false"></Property>
+				<Property Name="UILayoutRow" Type="Edm.Int16" Nullable="false"></Property>
+				<Property Name="UILayoutWidth" Type="Edm.Int16" Nullable="false"></Property>
+				<Property Name="UILayoutIcon" Type="Edm.String" Nullable="true"></Property>
+			</EntityType>
+			<EntityContainer Name="EC1" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="Features" EntityType="SAM.Feature"></EntitySet>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
