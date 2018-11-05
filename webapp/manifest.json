@@ -15,7 +15,7 @@
 		},
 		"dataSources": {
 			"mainService": {
-				"uri": "/here/goes/your/serviceurl/",
+				"uri": "/sap/opu/odata/PNP/SAM_SRV/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
@@ -73,15 +73,14 @@
 				"uri": "model/SideNavigationModel.json"
 			},
 			"SAMModel": {
-				"uri": "/here/goes/your/serviceurl/",
-				"type": "sap.ui.model.odata.v2.ODataModel",
-				"settings": {
-					"defaultOperationMode": "Server",
-					"defaultBindingMode": "OneWay",
-					"defaultCountMode": "Request"
-				},
 				"dataSource": "mainService",
-				"preload": true
+				"preload": true,
+				"json": "true",
+				"loadMetadataAsync": false,
+				"defaultCountMode": "Inline",
+				"defaultBindingMode": "TwoWay",
+				"defaultOperationMode": "Client",
+				"sequentializeRequests": true
 			}
 		},
 		"resources": {
