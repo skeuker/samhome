@@ -165,4 +165,11 @@
 	"UILayoutRow": 4,
 	"UILayoutWidth": 50,
 	"UILayoutIcon": "sap-icon://list"
+}, {
+	"FeatureID": "SoftwareAssetManagementMenu",
+	"FeatureTitle": "Menu",
+	"FeatureText": "Menu",
+	"FeatureUrl": "http://www.wikipedia.org",
+	"FeatureType": "Menu",
+	"UILayoutIcon": "sap-icon://chain-link"
 }]

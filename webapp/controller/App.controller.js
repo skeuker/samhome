@@ -45,6 +45,18 @@ sap.ui.define([
 				this.getRouter().navTo(sKey);
 				break;
 
+				//navigate to menu
+			case "Menu":
+
+				//get menu fixed navigation item
+				var oFixedNavigationItem = oNavigationItem.getBindingContext("SAMModel").getObject();
+
+				//open another window with terms of use page
+				window.open(oFixedNavigationItem.FeatureUrl, "_self");
+
+				//no further processing
+				break;
+
 				//unhandled navigation items
 			default:
 				sap.m.MessageToast.show("Navigation for item key " + sKey + " has not yet been implemented");
