@@ -7,13 +7,15 @@
 
 		<title>Software Asset Management</title>
 		
-		<!-- src="../../resources/sap-ui-core.js" -->
+		<!-- src="resources/sap-ui-cachebuster/sap-ui-core.js" -->
 		<script id="sap-ui-bootstrap"
 			src="https://sapui5.hana.ondemand.com/1.56.11/resources/sap-ui-cachebuster/sap-ui-core.js"
 			data-sap-ui-libs="sap.m"
 			data-sap-ui-theme="sap_belize"
 			data-sap-ui-compatVersion="edge"
-			data-sap-ui-resourceroots='{"pnp.sam": "./"}'>
+			data-sap-ui-resourceroots='{"pnp.sam": "./"}'
+			data-sap-ui-preload="async"
+			data-sap-ui-appCacheBuster="./">
 		</script>
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
